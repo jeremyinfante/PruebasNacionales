@@ -438,6 +438,14 @@ body {
     line-height: 1.6;
 }
 
+.question-paragraph {
+    margin-bottom: 0.85rem;
+}
+
+.question-paragraph:last-child {
+    margin-bottom: 0;
+}
+
 .question-images-container {
     display: flex;
     flex-direction: column;

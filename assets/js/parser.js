@@ -13,60 +13,105 @@ class MarkdownParser {
         const lines = markdown.split(/\r?\n/);
         let currentQuestion = null;
         let currentSection = '';
+        let rawBodyLines = [];
 
         for (let i = 0; i < lines.length; i++) {
             const line = lines[i].trim();
-
-            if (!line) continue;
 
             // Detect question header: ## Pregunta X
             const questionMatch = line.match(/^##\s+Pregunta\s+(\d+)/i);
             if (questionMatch) {
                 if (currentQuestion) {
-                    // Post-process accumulated text for inline styles
-                    currentQuestion.text = this._parseInlineMarkdown(currentQuestion.text.trim());
+                    currentQuestion.body = this._parseBody(rawBodyLines.join('\n'));
                     questions.push(currentQuestion);
                 }
                 const number = questionMatch[1];
                 currentQuestion = {
                     number: parseInt(number, 10),
-                    text: '',
-                    images: [],
                     options: [],
-                    correct: null
+                    correct: null,
+                    body: []
                 };
+                rawBodyLines = [];
                 currentSection = 'text';
             } 
             // Detect option: a), b), c), d)
             else if (currentQuestion && line.match(/^[a-d]\)/i)) {
                 currentSection = 'options';
-                this._parseOption(currentQuestion, line);
+                this._parseOption(currentQuestion, lines[i]);
             } 
             // Detect content (text or image) inside question
             else if (currentQuestion && currentSection === 'text') {
-                // Detect markdown image tag: ![alt](url)
-                const imageMatch = line.match(/!\[([^\]]*)\]\(([^)]+)\)/);
-                if (imageMatch) {
-                    currentQuestion.images.push(imageMatch[2]);
-                } 
                 // Ignore any major page headers (like # Cuadernillo) and accumulate question text
-                else if (!line.startsWith('#')) {
-                    if (currentQuestion.text) {
-                        currentQuestion.text += ' ' + line;
-                    } else {
-                        currentQuestion.text = line;
-                    }
+                if (!line.startsWith('#')) {
+                    rawBodyLines.push(lines[i]);
                 }
             }
         }
 
         // Push the last question
         if (currentQuestion) {
-            currentQuestion.text = this._parseInlineMarkdown(currentQuestion.text.trim());
+            currentQuestion.body = this._parseBody(rawBodyLines.join('\n'));
             questions.push(currentQuestion);
         }
 
         return questions;
+    }
+
+    /**
+     * Parses the raw body text of a question into an ordered list of elements (text and images).
+     * @param {string} rawBodyText - The raw body lines joined.
+     * @returns {Array} List of body elements.
+     * @private
+     */
+    _parseBody(rawBodyText) {
+        if (!rawBodyText) return [];
+        
+        const bodyElements = [];
+        // Split by image tags, capturing the tag in the result
+        const parts = rawBodyText.split(/(!\[[^\]]*\]\([^)]+\))/g);
+        
+        for (let i = 0; i < parts.length; i++) {
+            const part = parts[i];
+            if (!part) continue;
+            
+            const imageMatch = part.match(/^!\[([^\]]*)\]\(([^)]+)\)$/);
+            if (imageMatch) {
+                bodyElements.push({
+                    type: 'image',
+                    src: imageMatch[2],
+                    alt: imageMatch[1]
+                });
+            } else {
+                // It is text
+                const formattedHTML = this._formatText(part);
+                if (formattedHTML) {
+                    bodyElements.push({
+                        type: 'text',
+                        content: formattedHTML
+                    });
+                }
+            }
+        }
+        
+        return bodyElements;
+    }
+
+    /**
+     * Formats raw text segments into paragraph tags with markdown styles.
+     * @param {string} text - Raw text chunk.
+     * @returns {string} Formatted HTML.
+     * @private
+     */
+    _formatText(text) {
+        return text.split(/\n\s*\n/)
+            .map(para => {
+                const clean = para.trim().replace(/\s+/g, ' ');
+                if (!clean) return '';
+                return `<p class="question-paragraph">${this._parseInlineMarkdown(clean)}</p>`;
+            })
+            .filter(Boolean)
+            .join('');
     }
 
     /**

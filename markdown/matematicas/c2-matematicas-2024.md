@@ -140,11 +140,8 @@ d) Tabla D.
 La tabla muestra el dinero que ganó un vendedor en los tres primeros días de una semana. El vendedor calculó el promedio de su ganancia de los tres días y obtuvo que fue de $1,000. ¿Cuánto debe ganar el vendedor en el cuarto día, para que el promedio de los cuatro días sea de $1,100?
 
 a) $1,100
-
 b) $1,300
-
 c) $1,400 (correcta)
-
 d) $1,500
 
 ## Pregunta 14
@@ -152,11 +149,8 @@ d) $1,500
 Un estudiante quiere dibujar una figura geométrica en una hoja de papel y luego recortarla para obtener dos triángulos iguales. ¿Cuál de los siguientes procedimientos debe efectuar para lograr lo que quiere?
 
 a) Dibujar y recortar un círculo y luego recortar el círculo por el diámetro.
-
 b) Dibujar y recortar un cuadrado y luego recortar el cuadrado por una de sus diagonales. (correcta)
-
 c) Dibujar y recortar un pentágono y luego recortar el pentágono por la línea que une dos de sus vértices.
-
 d) Dibujar y recortar un semicírculo y luego recortar el semicírculo por el radio que forma un ángulo recto con el diámetro.
 
 ## Pregunta 15
@@ -175,11 +169,8 @@ d) Solamente el cuadrado.
 Según el Ministerio de Industria y Comercio el precio del barril del petróleo y el precio del galón de gasolina están relacionados, de tal forma que si el precio del primero disminuye el precio del segundo también lo hace y si el precio del primero aumenta también lo hace el segundo. Esta relación podría ser
 
 a) inversamente proporcional.
-
 b) directamente proporcional. (correcta)
-
 c) constante.
-
 d) oscilante.
 
 ## Pregunta 17
@@ -187,11 +178,8 @@ d) oscilante.
 A un número positivo x se le resta 3. El valor obtenido se eleva al cuadrado y, finalmente, el valor obtenido se divide entre 2. Si el resultado final es igual a 8, ¿cuál es el valor de x?
 
 a) 18
-
 b) 11
-
 c) 7 (correcta)
-
 d) 5
 
 ## Pregunta 18
@@ -207,14 +195,15 @@ d) Santo Domingo - Azua y Santiago - La Romana únicamente. (correcta)
 
 ## Pregunta 19
 
-La tabla muestra, para 4 animales de una misma especie, la cantidad de crías y la edad de cada uno de ellos. De acuerdo con la información de la tabla, ¿cuál de las siguientes afirmaciones es verdadera?
+La tabla muestra, para 4 animales de una misma especie, la cantidad de crías y la edad de cada uno de ellos. 
+
+![p19](img/pregunta-19-c2.png)
+
+De acuerdo con la información de la tabla, ¿cuál de las siguientes afirmaciones es verdadera?
 
 a) Entre menor es la edad del animal, menor es la cantidad de crías.
-
 b) La cantidad de crías siempre es mayor que la edad del animal.
-
 c) Entre menor es la edad del animal, mayor es la cantidad de crías. (correcta)
-
 d) La cantidad de crías siempre es menor que la edad del animal.
 
 ## Pregunta 20
@@ -222,48 +211,45 @@ d) La cantidad de crías siempre es menor que la edad del animal.
 Diana y Marcela comparten un apartamento en alquiler. De los costos del apartamento, Diana debe pagar el triple que Marcela. En el último mes los costos fueron de $30,000 por lo tanto Marcela debe pagar $10,000. ¿Es verdadero que Marcela debe pagar esta cantidad?
 
 a) Sí, porque la tercera parte de los costos corresponden a $10,000. (correcta)
-
 b) Sí, porque la parte que paga Diana es superior a la que paga Marcela.
-
 c) No, porque Diana pagaría menos del triple de lo que paga Marcela.
-
 d) No, porque Diana pagaría más del triple de lo que paga Marcela.
 
 ## Pregunta 21
 
-Una compañía va a lanzar un video juego en línea y realizó un estudio que arrojó los datos en un gráfico. Dada la información del gráfico, ¿cuál de las siguientes tablas representa los resultados del estudio?
-
+Una compañía va a lanzar un video juego en línea y realizó un estudio que arrojó los datos en un gráfico. 
 ![p21](img/pregunta-21-c2.png)
+
+Dada la información del gráfico, ¿cuál de las siguientes tablas representa los resultados del estudio?
+![p21-rc](img/pregunta-21-rc-c2.png)
 
 a) Servicio: Redes sociales 7,060; Página en línea 4,130; Juegos pregrabados 2,660. (correcta)
 b) Redes sociales 7,000; Página 4,000; Juegos 2,660.
-
 c) Redes sociales 2,660; Página 4,130; Juegos 7,060.
-
 d) Todos 4,130.
 
 ## Pregunta 22
 
-Una cooperativa hace préstamos a sus socios. La tabla muestra información de cuatro de ellos. Según la tabla, ¿cuál socio le debe menos dinero a la cooperativa?
+Una cooperativa hace préstamos a sus socios. La tabla muestra información de cuatro de ellos. 
+![p22](img/pregunta-22-c2.png)
+
+Según la tabla, ¿cuál socio le debe menos dinero a la cooperativa?
 
 a) El socio 1.
-
 b) El socio 2. (correcta)
-
 c) El socio 3.
-
 d) El socio 4.
 
 ## Pregunta 23
 
-En una actividad se realizará la rifa de un electrodoméstico. La tabla muestra el conteo de los presentes. Según la tabla, ¿quienes tienen mayor probabilidad de ganar el electrodoméstico?
+En una actividad se realizará la rifa de un electrodoméstico. La tabla muestra el conteo de los presentes. 
+![p23](img/pregunta-23-c2.png)
+
+Según la tabla, ¿quienes tienen mayor probabilidad de ganar el electrodoméstico?
 
 a) Los hombres mayores de 18 años. (correcta)
-
 b) Las mujeres menores de 18 años.
-
 c) Los hombres menores de 18 años.
-
 d) Las mujeres mayores de 18 años.
 
 ## Pregunta 24
@@ -273,11 +259,8 @@ Los gráficos muestran la temperatura promedio de una ciudad y el dinero gastado
 ![p24](img/pregunta-24-c2.png)
 
 a) A menor temperatura mayor es el dinero gastado en energía eléctrica.
-
 b) A mayor temperatura mayor es el dinero gastado en energía eléctrica. (correcta)
-
 c) El consumo de energía es independiente de la temperatura.
-
 d) El consumo de energía es constante sin importar la temperatura.
 
 ## Pregunta 25
@@ -306,52 +289,53 @@ d) Dividir r entre arcotan θ.
 
 ## Pregunta 26
 
-En un estudio se preguntó a varios jóvenes por el tiempo de permanencia en diferentes redes sociales. Los tiempos promedio de uso de cada red se muestran en la tabla. ¿A cuál red le dedican menos tiempo promedio los jóvenes del estudio?
+En un estudio se preguntó a varios jóvenes por el tiempo de permanencia en diferentes redes sociales. Los tiempos promedio de uso de cada red se muestran en la tabla. 
+
+![p26](img/pregunta-26-c2.png)
+
+¿A cuál red le dedican menos tiempo promedio los jóvenes del estudio?
 
 a) Red P
-
 b) Red Q
-
 c) Red R (correcta)
-
 d) Red S
 
 ## Pregunta 27
 
-El gráfico detalla las ventas de electrodomésticos durante un fin de semana en una tienda. ¿Cuál de las siguientes tablas muestra la misma información que el gráfico?
+El gráfico detalla las ventas de electrodomésticos durante un fin de semana en una tienda. 
 
 ![p27](img/pregunta-27-c2.png)
 
+¿Cuál de las siguientes tablas muestra la misma información que el gráfico?
+![p27-rc](img/pregunta-27-rc-c2.png)
+
 a) Todas 450.
-
 b) Lavadoras 450, Abanicos 100, Neveras 700, Televisores 250. (correcta)
-
 c) Televisores 100, Neveras 250, Abanicos 450, Lavadoras 700.
-
 d) Televisores 450, Neveras 100, Abanicos 700, Lavadoras 250.
 
 ## Pregunta 28
 
-Luisa tiene el compromiso de trabajar 40 horas en la semana (de lunes a viernes). Su supervisor lleva un control de horas trabajadas por días: lunes 7, martes 5, miércoles 7, jueves 8. ¿Cuántas horas tiene que trabajar el viernes para cumplir con su compromiso?
+Luisa tiene el compromiso de trabajar 40 horas en la semana (de lunes a viernes). Su supervisor lleva un control de horas trabajadas por días: lunes 7, martes 5, miércoles 7, jueves 8. 
+
+![p28](img/pregunta-28-c2.png)
+
+¿Cuántas horas tiene que trabajar el viernes para cumplir con su compromiso?
 
 a) 40
-
 b) 13 (correcta)
-
 c) 8
-
 d) 7
 
 ## Pregunta 29
 
 Un biólogo marino estudia 4 ballenas jorobadas. La tabla muestra algunas características. De acuerdo con la tabla, ¿cuál de las siguientes afirmaciones es verdadera?
 
+![p29](img/pregunta-29-c2.png)
+
 a) La ballena con el menor peso es macho. (correcta)
-
 b) La ballena con el mayor peso es macho.
-
 c) La ballena con la menor longitud es hembra.
-
 d) La ballena con la mayor longitud es hembra.
 
 ## Pregunta 30
@@ -361,11 +345,8 @@ En una competencia de natación debe completarse un circuito triangular en dos e
 ![p30](img/pregunta-30-c2.png)
 
 a) Sí, porque la etapa arrecife corresponde al lado más largo del triángulo.
-
 b) No, porque los catetos del triángulo forman parte de la etapa bahía.
-
 c) Sí, porque el lado del triángulo que corresponde con la etapa arrecife es igual a la suma de los otros dos catetos.
-
 d) No, porque la etapa bahía equivale a la suma de dos lados de un triángulo, que es mayor que el lado restante. (correcta)
 
 ## Pregunta 31
@@ -373,11 +354,8 @@ d) No, porque la etapa bahía equivale a la suma de dos lados de un triángulo, 
 Para rotular los automóviles una compañía está usando los números de la secuencia 5, 9, 13, 17... Un empleado dice que para el décimo auto el número del rótulo se obtiene como sigue. Con el procedimiento planteado por el empleado ¿puede encontrarse el número del rótulo del décimo auto?
 
 a) Sí, porque la secuencia de números siempre va aumentando.
-
 b) Sí, porque la sucesión se genera sumando una cantidad constante al término anterior. (correcta)
-
 c) No, porque en una sucesión no debe hallarse la diferencia entre dos de sus términos.
-
 d) No, porque la suma debe hacerse antes de la multiplicación.
 
 ## Pregunta 32
@@ -385,23 +363,23 @@ d) No, porque la suma debe hacerse antes de la multiplicación.
 En un terreno cuadrado se quieren sembrar 2 × 25 × 25 semillas. Para lograr esto, un agricultor propone un procedimiento pero le falta un paso. ¿Cuál debe ser el paso 2 que completa el procedimiento?
 
 a) Dividir en 4 secciones cada cuadrado.
-
 b) Sembrar 23 semillas en cada sección.
-
 c) Dividir cada cuadrado en 25 secciones. (correcta)
-
 d) Sembrar 50 semillas en cada cuadrado.
 
 ## Pregunta 33
 
-Juan repartió $120,000 entre sus cuatro hijos proporcionalmente a la edad. Felipe decide repartir $225,000 a sus cuatro hijos de la misma forma. ¿Cuánto dinero recibiría Marco?
+Juan repartió $120,000 entre sus cuatro hijos proporcionalmente a la edad que tiene de la forma siguiente:
+![p33](img/pregunta-33-p1-c2.png)
+
+Felipe decide repartir $225,000 a sus cuatro hijos de la misma forma que hizo Juan. 
+![p33](img/pregunta-33-p2-c2.png)
+
+¿Cuánto dinero recibiría Marco?
 
 a) $15,000
-
 b) $20,000
-
 c) $30,000
-
 d) $45,000 (correcta)
 
 ## Pregunta 34
@@ -409,25 +387,21 @@ d) $45,000 (correcta)
 Para numerar un conjunto de piezas se generó la siguiente secuencia: 3, 10, 31, 94, 283... ¿Cuál es la regla de formación de la secuencia?
 
 a) Multiplicar por 3 el número anterior y sumar 1. (correcta)
-
 b) Multiplicar por 4 el número anterior y restar 2.
-
 c) Sumar 7 al número anterior.
-
 d) Restar 7 al número anterior.
 
 ## Pregunta 35
 
-El siguiente diagrama de árbol muestra la distribución de tortas vendidas por una pastelería durante el mes pasado. ¿Cuál de las siguientes tablas muestra correctamente la información del diagrama de árbol?
+El siguiente diagrama de árbol muestra la distribución de tortas vendidas por una pastelería durante el mes pasado. 
+![p35](img/pregunta-35-p1-c2.png)
 
-![p35](img/pregunta-35-c2.png)
+¿Cuál de las siguientes tablas muestra correctamente la información del diagrama de árbol?
+![p35](img/pregunta-35-p2-c2.png)
 
 a) Fresa: 20% sin, 100% con; Mora: 20% sin, 20% con; Vainilla: 15% sin, 15% con.
-
 b) Fresa 20% sin, 10% con; Mora 40% sin, 0% con; Vainilla 0% sin, 30% con.
-
 c) Fresa 20% sin, 10% con; Mora 40% sin, 20% con; Vainilla 60% sin, 30% con. (correcta)
-
 d) Fresa 20% sin, 10% con; Mora 4% sin, 30% con; Vainilla 0% sin, 0% con.
 
 ## Pregunta 36
@@ -435,28 +409,28 @@ d) Fresa 20% sin, 10% con; Mora 4% sin, 30% con; Vainilla 0% sin, 0% con.
 Carla sugirió que para celebrar la graduación, cada estudiante ahorre $30 diarios. Para calcular la cantidad de dinero que tiene ahorrado cada estudiante, se utiliza la fórmula F(n) = 30n. ¿Por qué es correcta la fórmula utilizada?
 
 a) Porque durante n meses se suma $30 de cada estudiante.
-
 b) Porque cada día se suma la misma cantidad de $30 y se hace durante n días. (correcta)
-
 c) Porque se tiene en cuenta los 30 días del mes y así se sabe el total del ahorro.
-
 d) Porque se debe dividir entre 30 para hallar la cantidad total ahorrada por cada estudiante.
 
 ## Pregunta 37
 
-Hay dos cajas con las siguientes dimensiones. ¿Cuál es la diferencia entre los volúmenes de las cajas, en decímetros cúbicos?
+Hay dos cajas con las siguientes dimensiones. 
+![p37](img/pregunta-37-c2.png)
+
+¿Cuál es la diferencia entre los volúmenes de las cajas, en decímetros cúbicos?
 
 a) 16
-
 b) 19
-
 c) 40 (correcta)
-
 d) 56
 
 ## Pregunta 38
+Para calcular el dinero total M que se obtiene al invertir una cantidad inicial C, a una tasa de interés fija del 5% durante un tiempo t, se utiliza la fórmula M = C(1.05)^t. 
 
-Para calcular el dinero total M que se obtiene al invertir una cantidad inicial C, a una tasa de interés fija del 5% durante un tiempo t, se utiliza la fórmula M = C(1.05)^t. ¿Con cuál de las siguientes opciones se puede calcular el tiempo necesario para que la cantidad final sea igual al triple de la cantidad inicial?
+¿Con cuál de las siguientes opciones se puede calcular el tiempo necesario para que la cantidad final sea igual al triple de la cantidad inicial?
+
+![p38](img/pregunta-38-c2.png)
 
 a) t = log(3/1.05)
 b) t = log(3)/log(1.05) (correcta)
@@ -494,7 +468,10 @@ d) 1, 5, 5, 6, 6, 6 (correcta)
 
 ## Pregunta 42
 
-La tabla muestra los ingresos que ha tenido una tienda en los últimos tres meses por la venta de un producto: mes1 $1,000, mes2 $2,000, mes3 $6,000. ¿Cuál es la mediana de ingresos de la tienda en los tres meses?
+La tabla muestra los ingresos que ha tenido una tienda en los últimos tres meses por la venta de un producto: mes1 $1,000, mes2 $2,000, mes3 $6,000. 
+![p42](img/pregunta-42-c2.png)
+
+¿Cuál es la mediana de ingresos de la tienda en los tres meses?
 
 a) $2,000 (correcta)
 b) $3,000

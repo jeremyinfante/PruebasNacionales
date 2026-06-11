@@ -223,24 +223,27 @@ function renderQuestions() {
         card.className = cardClass;
         card.dataset.number = q.number;
 
-        // Render images
-        let imagesHTML = '';
-        if (q.images && q.images.length > 0) {
-            imagesHTML += '<div class="question-images-container">';
-            q.images.forEach(img => {
-                // Prepend base path if the image path is relative
-                const fullSrc = (img.startsWith('http://') || img.startsWith('https://') || img.startsWith('/')) 
-                    ? img 
-                    : basePath + img;
+        // Render body elements (text and images in exact order)
+        let bodyHTML = '';
+        if (q.body && q.body.length > 0) {
+            q.body.forEach(elem => {
+                if (elem.type === 'text') {
+                    bodyHTML += `<div class="question-text">${elem.content}</div>`;
+                } else if (elem.type === 'image') {
+                    const fullSrc = (elem.src.startsWith('http://') || elem.src.startsWith('https://') || elem.src.startsWith('/')) 
+                        ? elem.src 
+                        : basePath + elem.src;
 
-                imagesHTML += `
-                    <div class="question-image-wrapper" onclick="openZoomModal('${fullSrc}')">
-                        <img src="${fullSrc}" alt="Pregunta ${q.number} Diagrama" class="question-image" onerror="this.parentNode.style.display='none'">
-                        <div class="image-zoom-hint">🔍 Ampliar imagen</div>
-                    </div>
-                `;
+                    bodyHTML += `
+                        <div class="question-images-container">
+                            <div class="question-image-wrapper" onclick="openZoomModal('${fullSrc}')">
+                                <img src="${fullSrc}" alt="Pregunta ${q.number} Diagrama" class="question-image" onerror="this.parentNode.style.display='none'">
+                                <div class="image-zoom-hint">🔍 Ampliar imagen</div>
+                            </div>
+                        </div>
+                    `;
+                }
             });
-            imagesHTML += '</div>';
         }
 
         // Render options buttons
@@ -273,8 +276,7 @@ function renderQuestions() {
 
         card.innerHTML = `
             <div class="question-number">Pregunta ${q.number}</div>
-            <div class="question-text">${q.text}</div>
-            ${imagesHTML}
+            ${bodyHTML}
             <div class="options-container">${optionsHTML}</div>
         `;
 
