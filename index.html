@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pruebas Nacionales - Simulador Interactivo</title>
+    <!-- Premium CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header-brand-container">
+            <div class="header-brand">
+                🎯 Pruebas Nacionales
+                <small>Simulador Interactivo</small>
+            </div>
+        </div>
+        <div class="header-controls">
+            <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Cambiar Tema">☀️</button>
+            <button class="toggle-sidebar" id="toggleSidebar" aria-label="Abrir Menú">☰</button>
+        </div>
+    </header>
+
+    <!-- LAYOUT PRINCIPAL -->
+    <div class="container">
+        <!-- SIDEBAR -->
+        <aside class="sidebar" id="sidebar">
+            <!-- Matemáticas -->
+            <div class="sidebar-section">
+                <div class="sidebar-title">📊 Matemáticas</div>
+                <button class="sidebar-item" data-file="markdown/matematicas/c1-matematicas-2024.md" data-label="Matemáticas - Cuadernillo 1">
+                    <span class="sidebar-item-icon">📄</span>
+                    <span>Cuadernillo 1</span>
+                </button>
+                <button class="sidebar-item active" data-file="markdown/matematicas/c2-matematicas-2024.md" data-label="Matemáticas - Cuadernillo 2">
+                    <span class="sidebar-item-icon">📄</span>
+                    <span>Cuadernillo 2</span>
+                </button>
+            </div>
+
+            <!-- Ciencias Sociales -->
+            <div class="sidebar-section">
+                <div class="sidebar-title">🌍 Ciencias Sociales</div>
+                <button class="sidebar-item" data-file="markdown/ciencias-sociales/c1-ciencias-sociales-2024.md" data-label="Ciencias Sociales - Cuadernillo 1">
+                    <span class="sidebar-item-icon">📄</span>
+                    <span>Cuadernillo 1</span>
+                </button>
+                <button class="sidebar-item" data-file="markdown/ciencias-sociales/c2-ciencias-sociales-2024.md" data-label="Ciencias Sociales - Cuadernillo 2">
+                    <span class="sidebar-item-icon">📄</span>
+                    <span>Cuadernillo 2</span>
+                </button>
+            </div>
+
+            <!-- Footer -->
+            <div class="sidebar-footer">
+                Desarrollado por<br>
+                <strong>Elite Dev</strong>
+            </div>
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+            <div class="content-header show" id="contentHeader"></div>
+            <div class="quiz-container" id="quizContainer"></div>
+            <footer class="footer">Pruebas Nacionales © 2024 | Desarrollado por <strong>Elite Dev</strong></footer>
+        </main>
+    </div>
+
+    <!-- IMAGE ZOOM MODAL -->
+    <div class="zoom-modal" id="zoomModal">
+        <button class="zoom-close" id="zoomClose" aria-label="Cerrar vista ampliada">&times;</button>
+        <img class="zoom-content" id="zoomImage" src="" alt="Imagen ampliada">
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/parser.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
