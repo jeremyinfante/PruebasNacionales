@@ -10,7 +10,7 @@
 <body>
     <!-- HEADER -->
     <header class="header">
-        <div class="header-brand-container">
+        <div class="header-brand-container" id="brandHome" style="cursor: pointer;">
             <div class="header-brand">
                 Pruebas Nacionales
                 <small>Simulador Interactivo</small>
@@ -26,6 +26,14 @@
     <div class="container">
         <!-- SIDEBAR -->
         <aside class="sidebar" id="sidebar">
+            <!-- Inicio -->
+            <div class="sidebar-section">
+                <button class="sidebar-item active" id="btnGoHome">
+                    <span class="sidebar-item-icon">🏠</span>
+                    <span>Inicio / Dashboard</span>
+                </button>
+            </div>
+
             <!-- Matemáticas -->
             <div class="sidebar-section">
                 <div class="sidebar-title">📊 Matemáticas</div>
@@ -33,7 +41,7 @@
                     <span class="sidebar-item-icon">📄</span>
                     <span>Cuadernillo 1</span>
                 </button>
-                <button class="sidebar-item active" data-file="markdown/matematicas/c2-matematicas-2024.md" data-label="Matemáticas - Cuadernillo 2">
+                <button class="sidebar-item" data-file="markdown/matematicas/c2-matematicas-2024.md" data-label="Matemáticas - Cuadernillo 2">
                     <span class="sidebar-item-icon">📄</span>
                     <span>Cuadernillo 2</span>
                 </button>
@@ -61,8 +69,22 @@
 
         <!-- MAIN CONTENT -->
         <main class="main-content">
-            <div class="content-header show" id="contentHeader"></div>
-            <div class="quiz-container" id="quizContainer"></div>
+            <!-- Temporizador Pegajoso -->
+            <div class="timer-bar hidden" id="timerBar">
+                <div class="timer-bar-content">
+                    <span class="timer-icon">⏱️</span>
+                    <span class="timer-clock" id="timerClock">00:00</span>
+                    <button class="timer-toggle-btn" id="timerPauseBtn" aria-label="Pausar o Reanudar">⏸️</button>
+                </div>
+            </div>
+
+            <!-- Dashboard -->
+            <div class="home-container" id="homeContainer"></div>
+
+            <!-- Quiz -->
+            <div class="content-header hidden" id="contentHeader"></div>
+            <div class="quiz-container hidden" id="quizContainer"></div>
+            
             <footer class="footer">Pruebas Nacionales © 2024 | Desarrollado por <strong>JEREMY INFANTE</strong></footer>
         </main>
     </div>

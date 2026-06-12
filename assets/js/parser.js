@@ -104,14 +104,75 @@ class MarkdownParser {
      * @private
      */
     _formatText(text) {
-        return text.split(/\n\s*\n/)
-            .map(para => {
-                const clean = para.trim().replace(/\s+/g, ' ');
-                if (!clean) return '';
-                return `<p class="question-paragraph">${this._parseInlineMarkdown(clean)}</p>`;
-            })
-            .filter(Boolean)
-            .join('');
+        if (!text) return '';
+        
+        const lines = text.split(/\r?\n/);
+        let html = '';
+        let listType = null; // 'ul', 'ol', or null
+        let paragraphBuffer = [];
+        
+        const flushParagraph = () => {
+            if (paragraphBuffer.length > 0) {
+                const content = paragraphBuffer.map(line => this._parseInlineMarkdown(line)).join('<br>');
+                html += `<p class="question-paragraph">${content}</p>`;
+                paragraphBuffer = [];
+            }
+        };
+        
+        for (let i = 0; i < lines.length; i++) {
+            const rawLine = lines[i];
+            const trimmedLine = rawLine.trim();
+            
+            if (trimmedLine === '') {
+                flushParagraph();
+                if (listType) {
+                    html += `</${listType}>`;
+                    listType = null;
+                }
+                continue;
+            }
+            
+            // Check for list items
+            const ulMatch = trimmedLine.match(/^[-*]\s+(.*)$/);
+            const olMatch = trimmedLine.match(/^(\d+)\.\s+(.*)$/);
+            
+            if (ulMatch) {
+                flushParagraph();
+                if (listType !== 'ul') {
+                    if (listType) {
+                        html += `</${listType}>`;
+                    }
+                    html += '<ul class="question-list">';
+                    listType = 'ul';
+                }
+                const content = this._parseInlineMarkdown(ulMatch[1].trim());
+                html += `<li class="question-list-item">${content}</li>`;
+            } else if (olMatch) {
+                flushParagraph();
+                if (listType !== 'ol') {
+                    if (listType) {
+                        html += `</${listType}>`;
+                    }
+                    html += '<ol class="question-list">';
+                    listType = 'ol';
+                }
+                const content = this._parseInlineMarkdown(olMatch[2].trim());
+                html += `<li class="question-list-item">${content}</li>`;
+            } else {
+                if (listType) {
+                    html += `</${listType}>`;
+                    listType = null;
+                }
+                paragraphBuffer.push(trimmedLine);
+            }
+        }
+        
+        flushParagraph();
+        if (listType) {
+            html += `</${listType}>`;
+        }
+        
+        return html;
     }
 
     /**
